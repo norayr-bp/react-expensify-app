@@ -37,7 +37,7 @@ module.exports = (env) => {
             CSSExtract
         ],
     
-        devtool: isProduction ? 'source-map' : 'inline-source-map', // for handling errors in console by more good way . it shows the exact place of error
+        devtool: isProduction ? 'source-map' : 'inline-source-map',
     
         devServer: {
             contentBase: path.join(__dirname, 'public'),
