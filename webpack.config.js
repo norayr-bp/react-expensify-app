@@ -1,4 +1,4 @@
-const path = require('path');  // getting the path.join method from node
+const path = require('path'); 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = (env) => {
@@ -8,7 +8,7 @@ module.exports = (env) => {
     return {
         entry: './src/app.js',
         output: {
-            path: path.join(__dirname, 'public', 'dist'), // __dirname - returns the absolute path
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
     
@@ -18,7 +18,7 @@ module.exports = (env) => {
                 test: /\.js$/,
                 exclude: /node_modules/    
             }, {
-                test: /\.s?css$/,   // ? - make 's' optional
+                test: /\.s?css$/,
                 use: CSSExtract.extract({
                     use: [
                         {
