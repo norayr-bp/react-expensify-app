@@ -36,7 +36,7 @@ export class ExpenseListFilters extends React.Component {
           onChange={this.onTextChange}
         />
         <select
-          value={this.props.filters.sortBy}  // why wee need it ? it is working the same way without it
+          value={this.props.filters.sortBy}
           onChange={this.onSortChange}
         >
           <option value="date">Date</option>
